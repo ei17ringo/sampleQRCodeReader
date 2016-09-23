@@ -7,6 +7,7 @@
 
 import UIKit
 import AVFoundation
+import Spring
 
 class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     
@@ -14,7 +15,7 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     
     @IBOutlet weak var httpLabel: UILabel!
     
-    var startButton, stopButton : UIButton!
+    var startButton : SpringButton!
     var myVideoLayer :Any? = nil
     
     var qrURL:NSURL? = nil
@@ -94,13 +95,20 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
                 self.startButton.removeFromSuperview()
             }
             
-            self.startButton = UIButton(frame: CGRect(x:0,y:0,width:120,height:50))
+            self.startButton = SpringButton(frame: CGRect(x:0,y:0,width:120,height:50))
+            
             self.startButton.backgroundColor = UIColor.red;
             self.startButton.layer.masksToBounds = true
             self.startButton.setTitle("start", for: .normal)
             self.startButton.layer.cornerRadius = 20.0
             self.startButton.layer.position = CGPoint(x: (gvmo?.bounds.midX)!, y:(gvmo?.bounds.midY)!)
             
+            // アニメーションの設定
+            self.startButton.animation = "fadeOut"
+            self.startButton.autostart = true
+            self.startButton.repeatCount = 10
+            self.startButton.duration = 5.0
+            self.startButton.force = 3.0
             
             self.view.addSubview(startButton)
             self.startButton.addTarget(self, action: #selector(ViewController.onClickStartButton), for: .touchUpInside)
