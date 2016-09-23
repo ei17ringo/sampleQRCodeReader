@@ -417,6 +417,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = NF6KLZDSZ2;
 				INFOPLIST_FILE = sampleQRCodeReader/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.erikoichinohe.sampleQRCodeReader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -430,6 +431,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = NF6KLZDSZ2;
 				INFOPLIST_FILE = sampleQRCodeReader/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.erikoichinohe.sampleQRCodeReader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -514,6 +516,7 @@
 				193E36F01D922431009B939E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		193E36F11D922431009B939E /* Build configuration list for PBXNativeTarget "sampleQRCodeReaderTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +525,7 @@
 				193E36F31D922431009B939E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		193E36F41D922431009B939E /* Build configuration list for PBXNativeTarget "sampleQRCodeReaderUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +534,7 @@
 				193E36F61D922431009B939E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
